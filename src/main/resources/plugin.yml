@@ -1,0 +1,4 @@
+name: MapPlugin
+version: '${project.version}'
+main: com.czachodym.minecraft.map.mapplugin.MapPlugin
+api-version: 1.19
