@@ -1,15 +1,28 @@
-name: MapPlugin
+name: FramePlugin
 version: '${project.version}'
-main: com.czachodym.minecraft.map.mapplugin.MapPlugin
+main: com.czachodym.minecraft.frame.frameplugin.FramePlugin
 api-version: 1.19
+
+permissions:
+  frameplugin.admin:
+    default: op
+    description: Permission for all FramePlugin commands
 
 commands:
   markFrame:
+    permission: frameplugin.admin
     description: Use to mark a frame as a source of an item in it. A cost to do that is one of what you have in your hand.
     usage: /<command>
   cancelMark:
+    permission: frameplugin.admin
     description: Use to cancel /markFrame before interacting with an entity
     usage: /<command>
   unmarkFrame:
-    description: User to unmark already marked frame.
+    permission: frameplugin.admin
+    description: Use to unmark already marked frame.
     usage: /<command>
+  frameTest:
+    permission: frameplugin.admin
+    description: TO NIEZŁY TEST XD
+    usage: /<command>
+
